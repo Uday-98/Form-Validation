@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .error {
+            color: red;
+        }
+
+        .c1 {
+            border: 2px red ridge;
+        }
+
+        .c2 {
+            border: 2px rgb(19, 216, 19) ridge;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <form action="" id="form1">
+
+            <fieldset>
+                <h4>Validation Form</h4>
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                            <input type="text" name="myname" id="myname" placeholder="enter your name"
+                                class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="email" id="email" placeholder="enter your email"
+                                class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="password" id="password" placeholder="enter your password"
+                                class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="conf_pass" id="conf_pass" placeholder="enter your conf_pass"
+                                class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="date" id="date" placeholder="enter date" class="form-control">
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                            <input type="text" name="fname" id="fname" placeholder="enter first name"
+                                class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="ltr" id="ltr" placeholder="enter letter only" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="alpha" id="alpha" placeholder="alpha and number's only"
+                                class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="punc" id="punc" placeholder="Enter alphabets with basic punc"
+                                class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="url" id="url" placeholder="Enter url" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="checkbox" name="check" id="check"> Accept Term & Conditions.
+                            <label for="check" class="error" style="display: none;"></label><br>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                            <input type="hidden" name="data" id="data" value="5">
+                            <input type="text" name="num1" id="num1" placeholder="Enter number" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="age" id="age" placeholder="enter age" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="step" id="step" placeholder="enter step" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="number" id="numbers" placeholder="accept only number"
+                                class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="num" id="num" placeholder="enter number with decimal both"
+                                class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <fieldset>
+                                <label>Gender</label>
+                                <input type="radio" name="Gender[]" value="male" id=""> Male
+                                <input type="radio" name="Gender[]" value="male" id=""> Femail
+                                <label for="Gender[]" class="error" style="display: none;"></label>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                </div>
+
+                <input type="submit" value="submit" class="btn btn-info ">
+                <h2 id="summary"></h2>
+            </fieldset>
+        </form>
+
+    </div>
+
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"> </script>
+    <script src="jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="jquery-validation/dist/additional-methods.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
